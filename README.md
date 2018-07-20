@@ -11,3 +11,5 @@ python3 lottery.py '2018-07-19' --score_file score-07-19.csv --output_file lotte
 ```
 
 Results are written into `lottery-07-19.csv`.
+
+Note that during the sampling, we use the square of a candidate's score as the source for sampling probability, thus higher scores are further more likely to be picked.
