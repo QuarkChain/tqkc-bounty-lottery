@@ -66,7 +66,7 @@ def main():
     # Write the lottery result.
     dir_path = path.dirname(path.realpath(__file__))
     with open(path.join(dir_path, args.output_file), "w") as f:
-        f.write("address,score,qkc\n")
+        f.write("testnet address,score,reward QKC\n")
         for c, qkc in zip(lottery, LOTTERY_QKC):
             f.write("%s,%d,%d\n" % (c.addr, c.score, qkc))
 
